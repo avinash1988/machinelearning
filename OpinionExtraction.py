@@ -34,7 +34,7 @@ class Rule(object):
 			return True
 		return False
 
-	def extract_opinion_using_nltk_grammer(self,data):
+	def extract_opinion(self,data):
 
 		result = []
 		temp = []
@@ -106,6 +106,6 @@ class Rule(object):
 if __name__=="__main__":
 	obj = Rule.getInstance()
 	data = [('He', 'PRP'), ('and', 'CC'), ('his', 'PRP$'), ('staff', 'NN'), ('were', 'VBD'), ('neither', 'DT'), ('good', 'JJ'), ('nor', 'CC'), ('smart', 'JJ'), ('.', '.')]
-	feature = obj.extract_opinion_using_nltk_grammer(data)
+	feature = obj.extract_opinion(data)
 	print feature
 			
