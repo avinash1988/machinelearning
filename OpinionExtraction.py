@@ -4,7 +4,6 @@ import os
 import nltk
 from nltk.corpus import stopwords
 stopwordList = stopwords.words('english')
-from nltk.corpus import stopwords
 nltk_stopword_list = set(stopwords.words('english')) - set(["very","didnt","doesnt","dont","didn't","doesn't","not","never","nor",
 "n't","at","all","to","have","over","in","during","but","more","most","been","being","having","do","does","did","doing","until","while",
 "with","abount","against","between","through","during","below","above","down","in","under","few","each","no","nor","not",
